@@ -1,8 +1,6 @@
 .card {
   padding: 160px 0 0;
-  &__inner {
-    
-  }
+
   &__box{
     display: flex;
     align-items: center;
@@ -12,8 +10,7 @@
   &__pic {
     max-width: 540px;
   }
-  &__right--box {
-  }
+ 
   &__paragraph {
     font-size: 14px;
     line-height: 19px;
@@ -90,6 +87,6 @@ line-height: 25px;
       max-width: 327px;
       text-align:center ;
     }
-    .
+    
   }
 }

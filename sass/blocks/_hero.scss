@@ -15,14 +15,13 @@
     letter-spacing: 1.42857px;
     text-transform: uppercase;
     color: #FFFFFF;
-    max-width: 283px;
+    // max-width: 283px;
   }
-  
-  @media screen and (max-width:480px) {
-    &__heading {
-      max-width: 207px;
-      font-size: 28px;
-      line-height: 38px;
-    }
+}
+@media  only screen and (max-width:480px) {
+  .hero__heading {
+   
+    font-size: 28px;
+    line-height: 38px;
   }
 }

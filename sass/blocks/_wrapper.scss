@@ -16,6 +16,7 @@
     max-height: 204px;
     margin-top: 80px;
     padding: 11px 109px 30px;
+    max-width: 367px;
   }
   &__img {
     margin-top: -50px;
@@ -50,12 +51,21 @@
     opacity: 0.5;
     
   }
-  @media screen and (max-width:768px){
-     &__list{
+  @media screen and (max-width:1050px){
+ &__list{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-      }
+   }
+   &__item:nth-child(2){
+    padding: 0px 80px 50px;
+  }
+  &__item:nth-child(1){
+    padding: 0px 80px 75px;
+  }
+  &__item:nth-child(3){
+    padding: 0px 80px 45px;
+  }
   }
   
   

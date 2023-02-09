@@ -93,14 +93,14 @@ body {
 .hero {
   background: #000000;
 }
-.hero .hero__inner {
+.hero__inner {
   padding: 98px;
 }
-.hero .hero__hr {
+.hero__hr {
   width: 100%;
   height: 1px;
 }
-.hero .hero__heading {
+.hero__heading {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
@@ -110,6 +110,12 @@ body {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 480px) {
+  .hero__heading {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
 .card {
   padding: 160px 0 0;
 }
@@ -214,6 +220,7 @@ body {
   max-height: 204px;
   margin-top: 80px;
   padding: 11px 109px 30px;
+  max-width: 367px;
 }
 .wrapper__img {
   margin-top: -50px;
@@ -246,20 +253,36 @@ body {
   color: #000000;
   opacity: 0.5;
 }
+@media screen and (max-width: 1050px) {
+  .wrapper__list {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .wrapper__item:nth-child(2) {
+    padding: 0px 80px 50px;
+  }
+  .wrapper__item:nth-child(1) {
+    padding: 0px 80px 75px;
+  }
+  .wrapper__item:nth-child(3) {
+    padding: 0px 80px 45px;
+  }
+}
 
 .best {
   padding: 0 0 160px;
 }
-.best .best__inner {
+.best__inner {
   display: flex;
   align-items: center;
   -moz-column-gap: 125px;
        column-gap: 125px;
 }
-.best .best__span {
+.best__span {
   color: crimson;
 }
-.best .best__heading {
+.best__heading {
   font-weight: 700;
   font-size: 40px;
   line-height: 44px;
@@ -269,7 +292,7 @@ body {
   max-width: 445px;
   margin-bottom: 32px;
 }
-.best .best__text {
+.best__text {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
@@ -277,11 +300,33 @@ body {
   opacity: 0.5;
   max-width: 445px;
 }
-.best .best__img {
-  width: 540px;
-  height: 588px;
+.best__img {
+  max-width: 540px;
+  max-height: 588px;
   background: #F1F1F1;
   border-radius: 8px;
+}
+@media screen and (max-width: 900px) {
+  .best__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .best__img {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .best__img {
+    max-width: 327px;
+  }
+  .best__text {
+    max-width: 327px;
+    text-align: center;
+  }
+  .best__heading {
+    max-width: 327px;
+    text-align: center;
+  }
 }
 
 .footer {
